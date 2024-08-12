@@ -1,0 +1,252 @@
+.reel-body {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    display: flex;
+}
+
+.reel-main-body {
+    height: 100%;
+    width: 100%;
+
+}
+
+.reel-div-main {
+    height: 100%;
+    width: 100%;
+   border: 1px solid black;
+    overflow: hidden;
+    overflow: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    margin-top: 3%;
+
+}
+
+.reel-div-main-i {
+    height: 90%;
+    width: 40%;
+    display: flex;
+}
+
+.reel-div-main-i-1 {
+    height: 100%;
+    width: 55%;
+    border-radius: 5px;
+}
+
+.reel-div-main-i-2 {
+    height: 100%;
+    width: 10%;
+
+}
+
+.reel-div-main-i-2-1 {
+    width: 100%;
+    height: 40%;
+
+}
+
+.reel-div-main-i-2-2 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+
+}
+
+.reel-div-main-i-2-2-2 {
+    height: 60%;
+    width: 60%;
+    border-radius: 5px;
+}
+
+.reel-details {
+    height: 90%;
+}
+
+/* .content-item-link {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2px;
+} */
+
+.content-item {
+    height: 600px;
+    width: 22%;
+    display: flex;
+    margin-top: 10px;
+}
+
+.content-details {
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+
+}
+
+.content-item .reel-page-reel {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: black
+}
+
+.username-reel {
+    color: white;
+    font-weight: bold;
+
+}
+
+.reel-page-details-div {
+    height: 8%;
+    width: 100%;
+    position: absolute;
+    top: 90%;
+    display: flex;
+
+
+}
+
+.reel-page-details-div-profile {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.reel-page-details-div-profile-inner {
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+}
+
+.reel-page-details-div-username {
+    height: 100%;
+    width: 85%;
+}
+
+.reel-page-details-div-username-1 {
+    height: 70%;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: end;
+}
+
+.reel-page-details-div-username-2 {
+    height: 30%;
+    width: 100%;
+    color: white;
+    font-size: 10px;
+}
+
+
+
+.reel-page-details-div-icons {
+    height: 600px;
+    width: 15%;
+}
+
+.reel-page-details-div-icons-inner {
+    height: 100%;
+    width: 25%;
+}
+
+/* .home-body-nav-post {
+    height: 100%;
+    width: 5%;
+    border-right: 0.5px solid rgb(204, 190, 190);
+} */
+
+
+
+
+/* media queries for mobile */
+
+@media only screen and (max-width:480px) {
+
+    .content-item {
+        height: 570px;
+        width: 110%;
+        display: flex;
+
+        margin: 0px;
+        padding: 0px;
+        margin-top: 10%;
+    }
+
+    .reel-div-main {
+        height: 100%;
+        width: 100%;
+
+        overflow: hidden;
+        overflow: scroll;
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+
+    }
+
+    .reel-main-body {
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .reel-page-details-div-icons {
+        height: 600px;
+        width: 15%;
+        display: none;
+    }
+
+
+}
+
+/* media queries for tAB */
+
+@media only screen and (min-width : 426px) and (max-width:1024px) {
+
+    .content-item {
+        height: 700px;
+        width: 50%;
+        display: flex;
+
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+}
+
+.reel-page-details-div-likeandall {
+    height: 70%;
+    width: 10%;
+    position: absolute;
+    top: 30%;
+    left: 90%;
+    display: none;
+}
+
+/* media queries for mobile */
+
+@media only screen and (max-width:480px) {
+    .reel-page-details-div-likeandall {
+        height: 70%;
+        width: 10%;
+        position: absolute;
+        top: 30%;
+        left: 90%;
+        display: block;
+        color: #fff;
+    }
+
+
+}

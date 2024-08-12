@@ -1,0 +1,928 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.defpage-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0d8bd4;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    animation: fadeIn 1s ease-in-out;
+}
+/* hi */
+/* hello */
+.defpage-inner {
+    text-align: center;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    animation: slideUp 1s ease-in-out;
+}
+
+.defpage-header {
+    margin-bottom: 20px;
+}
+
+.defpage-logo {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 10px;
+    animation: bounce 2s infinite;
+}
+
+.defpage-title {
+    font-weight: 700;
+    font-size: 28px;
+    color: #1da1f2;
+    margin: 0;
+}
+
+.defpage-content {
+    margin-top: 20px;
+}
+
+.defpage-tagline {
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.defpage-join,
+.defpage-already {
+    font-size: 20px;
+    font-weight: 500;
+    color: #1da1f2;
+    margin: 10px 0;
+}
+
+.defpage-btn {
+    width: 80%;
+    margin: 10px 0;
+    height: 45px;
+    background-color: #1da1f2;
+    color: #ffffff;
+    font-weight: 500;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.defpage-btn:hover {
+    background-color: #0d8bd4;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .defpage-inner {
+        padding: 20px;
+    }
+
+    .defpage-title {
+        font-size: 24px;
+    }
+
+    .defpage-tagline {
+        font-size: 20px;
+    }
+
+    .defpage-join,
+    .defpage-already {
+        font-size: 18px;
+    }
+
+    .defpage-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .defpage-title {
+        font-size: 20px;
+    }
+
+    .defpage-tagline {
+        font-size: 18px;
+    }
+
+    .defpage-join,
+    .defpage-already {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* css for signup page */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Reset and general styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1da1f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.signup-body {
+    height: 100vh;
+    width: 100%;
+}
+
+.signup-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow: hidden;
+}
+
+.signup-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup-logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    animation: login-bounce 2s infinite;
+}
+
+.signup-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1da1f2;
+}
+
+.signup-content {
+    padding: 20px;
+}
+
+.signup-welcome {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.signup-section {
+    margin-bottom: 15px;
+}
+
+.signup-input {
+    width: 100%;
+}
+
+.signup-btn {
+    width: 100%;
+    height: 40px;
+    background-color: #1da1f2;
+    color: #ffffff;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #0d8bd4;
+}
+
+.signup-error {
+    color: #ff4d4f;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.signup-info {
+    color: #52c41a;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.signup-login {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup-login-link {
+    color: #1da1f2;
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.signup-login-link:hover {
+    color: #0d8bd4;
+}
+
+
+
+/* css for the login page */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.signup-body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1da1f2;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    animation: login-fadeIn 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.login-logo {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 10px;
+    animation: login-bounce 2s infinite;
+}
+
+.login-title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #1da1f2;
+}
+
+.login-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-welcome {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    width: 100%;
+}
+
+.login-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.login-signup-link {
+    color: #1d9cf1cd;
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.login-signup-link:hover {
+    color: #0d8bd4;
+}
+
+.login-btn {
+    background-color: #1da1f2;
+    color: #ffffff;
+    font-weight: 500;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+    background-color: #0d8bd4;
+}
+
+/* Animations */
+@keyframes login-fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes login-bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+
+
+
+/* css for reg page */
+
+/* Reg.css */
+
+.signup-body {
+    font-family: Arial, sans-serif;
+    /* Ensure font family for entire page */
+    background-color: #1da1f2;
+    /* Light background color */
+    height: 100vh;
+    /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.reg-container {
+    width: 90%;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+
+}
+
+.reg-header {
+    margin-bottom: 20px;
+}
+
+.reg-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    animation: login-bounce 2s infinite;
+}
+
+.reg-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.reg-form-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.reg-form-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.reg-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.reg-form-inputs {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.reg-input {
+    width: calc(100% - 20px);
+    margin-bottom: 15px;
+}
+
+.reg-submit {
+    width: calc(100% - 20px);
+    background-color: #1da1f2;
+    /* Twitter blue */
+    color: white;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.reg-submit:hover {
+    background-color: #0e91e0;
+    /* Darker shade of blue on hover */
+}
+
+
+
+
+
+/* css for Forgot poassword page */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Body styles */
+.forgotpassword-body,
+.forgotpassword-html {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1da1f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Container styles */
+.forgotpassword-container {
+    width: 100%;
+    max-width: 450px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    animation: forgotpassword-fadeIn 1s ease-in-out;
+}
+
+/* Header styles */
+.forgotpassword-header {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    color: #ffffff;
+}
+
+.forgotpassword-logo {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+    animation: forgotpassword-bounce 2s infinite;
+}
+
+.forgotpassword-title {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+    color: #0d8bd4;
+}
+
+/* Content styles */
+.forgotpassword-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forgotpassword-section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.forgotpassword-section-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Options styles */
+.forgotpassword-options {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forgotpassword-option {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+}
+
+.forgotpassword-option-text {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.forgotpassword-button {
+    width: 60%;
+    height: 40px;
+    background-color: #1da1f2;
+    color: #ffffff;
+    font-weight: 500;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.forgotpassword-button:hover {
+    background-color: #0d8bd4;
+}
+
+/* Animations */
+@keyframes forgotpassword-fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes forgotpassword-bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+
+
+/* css for recover with phone page */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.recoverphone-body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1da1f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recoverphone-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    animation: recoverphone-fadeIn 1s ease-in-out;
+}
+
+.recoverphone-header {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    color: #ffffff;
+}
+
+.recoverphone-logo {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+    animation: login-bounce 2s infinite;
+}
+
+.recoverphone-title {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+    color: #0d8bd4;
+}
+
+.recoverphone-content {
+    padding: 30px;
+}
+
+.recoverphone-welcome {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.recoverphone-section {
+    margin-bottom: 20px;
+}
+
+.recoverphone-otp {
+    width: 100%;
+}
+
+.recoverphone-btn {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+/* Animations */
+@keyframes recoverphone-fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* css for the recover email page */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Global Styles */
+
+
+/* Container Styles */
+.recoveremail-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0d8bd4;
+}
+
+.recoveremail-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    animation: recoveremail-fadeIn 1s ease-in-out;
+    padding: 20px;
+    margin: 20px;
+}
+
+.recoveremail-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.recoveremail-logo {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+    animation: login-bounce 2s infinite;
+}
+
+.recoveremail-title {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+}
+
+.recoveremail-content {
+    padding: 20px;
+}
+
+.recoveremail-section {
+    margin-bottom: 20px;
+}
+
+.recoveremail-section-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+}
+
+.recoveremail-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.recoveremail-form-row {
+    margin-bottom: 20px;
+}
+
+.recoveremail-input {
+    width: 100%;
+}
+
+.recoveremail-btn {
+    width: 100%;
+    height: 40px;
+    background-color: #1da1f2;
+    color: #ffffff;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.recoveremail-btn:hover {
+    background-color: #0d8bd4;
+}
+
+.recoveremail-error {
+    color: red;
+    font-size: 14px;
+}
+
+.recoveremail-info {
+    color: green;
+    font-size: 14px;
+}
+
+/* Animations */
+@keyframes recoveremail-fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* scc for the Change password */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.changepassword-body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1da1f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.changepassword-container {
+    width: 100%;
+    max-width: 450px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.changepassword-header {
+    padding: 20px;
+    background: #fff;
+    color: #ffffff;
+    text-align: center;
+}
+
+.changepassword-logo {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+    animation: login-bounce 2s infinite;
+}
+
+.changepassword-title {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+    color: #0d8bd4;
+}
+
+.changepassword-content {
+    padding: 30px;
+}
+
+.changepassword-welcome {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.changepassword-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.changepassword-input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.changepassword-input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.changepassword-button {
+    width: 100%;
+}
+
+.changepassword-submit-btn {
+    width: 100%;
+    height: 40px;
+    background-color: #1da1f2;
+    color: #ffffff;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.changepassword-submit-btn:hover {
+    background-color: #0d8bd4;
+}

@@ -1,0 +1,388 @@
+.message-section1 {
+    height: 100%;
+    width: 30%;
+    overflow: hidden;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    border-right: 0.5px solid rgb(204, 190, 190);
+}
+
+.message-section1-1 {
+    height: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-section1-1-inner {
+    height: 100%;
+    width: 95%;
+    display: flex;
+}
+
+.message-section1-1-inner-1 {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-section1-1-inner-2 {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-weight: bold;
+}
+
+.message-section1-1-inner-3 {
+    height: 100%;
+    width: 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-section1-2 {
+    height: 7%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.message-section1-2-inner {
+    height: 80%;
+    width: 90%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 5%;
+    background-color: rgba(242, 242, 242, 255);
+}
+
+.message-section1-3 {
+    height: 15%;
+    width: 100%;
+
+}
+
+.message-section1-4 {
+    height: 5%;
+    width: 100%;
+    /* border-bottom: 1px solid rgba(242, 242, 242, 255); */
+
+}
+
+.message-section1-4-inner {
+    height: 100%;
+    width: 100%;
+
+}
+
+.message-section1-4-tabs {
+    height: 5%;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+}
+
+.message-section1-4-tabspanel {
+    height: 95%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.message-section1-4-tabs-tab {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-section1-4-inner {
+    height: 5%;
+    width: 100%;
+    display: flex;
+}
+
+.message-section1-4-inner-1 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.message-section1-4-inner-2 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: rgb(204, 190, 190);
+}
+
+.message-section1-5 {
+    height: 93%;
+    width: 100%;
+
+    overflow: scroll;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.message-section1-5-1 {
+    height: 70px;
+    width: 100%;
+    /* border-bottom: 1px solid rgba(242, 242, 242, 255); */
+    display: flex;
+
+}
+
+.message-section1-5-1:hover {
+    background-color: rgba(242, 242, 242, 255);
+}
+
+.message-section1-5-1-1 {
+    height: 100%;
+    width: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-section1-5-1-1-dp {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+
+}
+
+.message-section1-5-1-2 {
+    height: 100%;
+    width: 80%;
+
+
+}
+
+.message-section1-5-1-2-1 {
+    height: 50%;
+    width: 100%;
+
+    display: flex;
+    justify-content: start;
+    align-items: end;
+
+
+
+}
+
+.message-section1-5-1-2-2 {
+    height: 50%;
+    width: 100%;
+
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    font-size: 12px;
+    color: rgb(148, 143, 143);
+}
+
+
+
+
+
+/* src/components/Modal.css */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 65%;
+    position: absolute;
+    z-index: 1000;
+    margin-left: 35%;
+}
+
+.modal-container {
+    background: white;
+
+
+    width: 100%;
+
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.modal-header {
+    border-bottom: 2px solid rgba(242, 242, 242, 255);
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.modal-close {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-header-inner {
+    height: 85%;
+    width: 95%;
+
+    display: flex;
+}
+
+.modal-header-inner-1 {
+    height: 100%;
+    width: 8%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-header-inner-1-1 {
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    border: 1px solid black;
+
+}
+
+.modal-header-inner-2 {
+    height: 100%;
+    width: 60%;
+
+}
+
+.modal-header-inner-3 {
+    height: 100%;
+    width: 32%;
+
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.odal-header-inner-2-1 {
+    height: 50%;
+    width: 100%;
+
+    font-weight: bold;
+    display: flex;
+    align-items: end;
+}
+
+.odal-header-inner-2-2 {
+    height: 50%;
+    width: 100%;
+
+    display: flex;
+    align-items: start;
+}
+
+.modal-body {
+    height: 78%;
+    width: 100%;
+
+}
+
+.modal-foot {
+    height: 8%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-foot-1 {
+    height: 90%;
+    width: 95%;
+    border: 1px solid rgb(153, 148, 148);
+    border-radius: 50px;
+    display: flex;
+}
+
+.modal-foot-1-1 {
+    height: 100%;
+    width: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.modal-foot-1-2 {
+    height: 100%;
+    width: 85%;
+
+}
+
+.modal-foot-1-3 {
+    height: 100%;
+    width: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.modalmessageoo1
+{
+    height: 100vh;
+    width: 70%;
+   
+}
+.modalmessageoo1-1
+{
+    height: 100%;
+    width: 100%;
+}
+.closemessgae
+{
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    height: 10%;
+    width: 3%;
+    
+    font-weight: bold;
+}
+.username-message
+{
+    height: 30px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
